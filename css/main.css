@@ -73,6 +73,7 @@
 .startbutton {
   background-color: lightblue;
   text-align: center;
+  font-size: 120%;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(206, 225, 255);
   padding-top: 1%;
@@ -121,6 +122,10 @@
   .content {
     font-size: 180%;
   }
+
+  .startbutton {
+    font-size: 100%;
+  }
 }
 
 /* Medium */
@@ -140,6 +145,10 @@
 
   .content {
     font-size: 150%;
+  }
+
+  .startbutton {
+    font-size: 80%;
   }
 }
 
@@ -161,5 +170,9 @@
 
   .content {
     font-size: 170%;
+  }
+
+  .startbutton {
+    font-size: 100%;
   }
 }
