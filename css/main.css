@@ -2,25 +2,23 @@
 .body {
   background-color: rgb(186, 207, 225);
   text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .headerFQ,
 .question  {
   Background-color: #d8e6f3;
-  text-align: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 250%;
+  font-weight:lighter;
+  
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
-
-  font-size: 45px;
-  font-weight:lighter;
-
   margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: 15%;
   margin-right: 15%;
-
   border-radius: 50px;
   border-width: 0.5%;
   border-style:dotted;
@@ -36,7 +34,7 @@
   margin-top: 2%;
   margin-left: 8%;
   margin-right: 8%;
-  font-size: 25px;
+  font-size: 150%;
   Background-color: #d8e6f3;
   
   border-style:double;
@@ -91,12 +89,7 @@
   } */
 
   .body{
-    width: 100%; /*width of the box, take up a quarter of the parent's size*/
-  }
-
-  .headerFQ,
-  .question  {
-    width:100%
+      flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
   }
 }
 
@@ -107,12 +100,7 @@
   } */
 
   .body{
-    width: 100%; /*width of the box, take up a quarter of the parent's size*/
-  }
-
-  .headerFQ,
-  .question  {
-    width:100%
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
 }
@@ -124,16 +112,12 @@
   } */
 
   .body{
-    width: 100%; /*width of the box, take up a quarter of the parent's size*/
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
   .headerFQ,
   .question  {
-    font-size: 30px;
-  }
-
-  .content {
-    font-size: 20px;
+    width:100%
   }
 }
 
@@ -144,15 +128,27 @@
   } */
 
   .body{
-      width: 100%; /*width of the box, take up a quarter of the parent's size*/
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
   .headerFQ,
   .question  {
-    font-size: 30px;
+    width:100%
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 340px) {
+  /* body {
+    background-color: blue;
+  } */
+
+  .body{
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
-  .content {
-    font-size: 20px;
+  .headerFQ,
+  .question  {
+    width:100%
   }
 }
