@@ -10,7 +10,7 @@
   Background-color: #d8e6f3;
   font-size: 265%;
   font-weight:lighter;
-  
+  color:#12264f;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 2%;
@@ -34,6 +34,7 @@
   margin-left: 8%;
   margin-right: 8%;
   font-size: 165%;
+  color:#12264f;
   Background-color: #d8e6f3;
   
   border-style:double;
@@ -65,11 +66,15 @@
   text-align: center;
 }
 
+.bold{
+  font-weight:bold
+}
+
 .startbutton {
   background-color: lightblue;
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgb(253, 252, 252);
+  color: rgb(206, 225, 255);
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 3%;
