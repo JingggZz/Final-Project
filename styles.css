@@ -1,25 +1,26 @@
 /* styles.css for choices game v1.0 */
 
 .body {
-  background-color: #D3D3d3;
+  background-color: rgb(186, 207, 225);
 }
 
 .headerFQ,
 .question  {
-  Background-color: gray;
+  Background-color: #d8e6f3;
   font-size: 45px;
-  font-weight: bold;
-  font-family: "Helvetica";
+  font-weight:lighter;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   margin-left: 400px;
   margin-right: 400px;
-  border-radius: 1000px;
-  border-width: 25px;
-  border-style: inset;
-  border-color: #63666A;
+  border-radius: 50px;
+  border-width: 5px;
+  border-style:dotted;
+  border-color: #aec2db;
 }
 .content {
   text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 150px;
@@ -27,9 +28,11 @@
   margin-left: 280px;
   margin-right: 280px;
   font-size: 20px;
-  Background-color: #939799;
-  border-style: inset;
+  Background-color: #d8e6f3;
+  
+  border-style:double;
   border-width: 8px;
+  border-color: #aec2db;
   border-radius: 120px;
 }
 
@@ -40,7 +43,7 @@
 .gr,
 .or,
 .rr {
-  color: black;
+  color: rgb(218, 223, 227);
   border-style: inset;
   border-width: 8px;
   margin: 3px;
@@ -56,30 +59,14 @@
   text-align: center;
 }
 
-.gr{
-  border-color: green;
-}
-
-.or{
-  border-color: orange;
-}
-
-.rr{
-  border-color: red;
-}
-
 .startbutton {
   background-color: lightblue;
-  color: black;
-  border-color: blue;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(253, 252, 252);
+  border-width: 5px;
+  border-color:#bcd4e7;
 }
 
 .question {
   padding: 20px;
-}
-
-.alarm {
-  width: 85px;
-  height: auto;
-  text-align: center; 
 }
