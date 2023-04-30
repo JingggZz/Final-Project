@@ -10,12 +10,12 @@
   Background-color: #d8e6f3;
   font-size: 265%;
   font-weight:lighter;
-  color:#12264f;
+  color:#003460;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
-  margin-top: 3%;
+  margin-top: 3.5%;
   margin-bottom: 3%;
   margin-left: 15%;
   margin-right: 15%;
@@ -30,11 +30,11 @@
   padding-bottom: 1%;
   padding-left: 3%;
   padding-right: 3%;
-  margin-top: 2%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 165%;
-  color:#12264f;
+  color:#003460;
   Background-color: #d8e6f3;
   
   border-style:double;
@@ -67,7 +67,14 @@
 }
 
 .bold{
+  font-size: 120%;
   font-weight:bold
+}
+
+.highlight{
+  font-size: 100%;
+  color:#4e78a0;
+
 }
 
 .startbutton {
@@ -78,10 +85,10 @@
   color: rgb(206, 225, 255);
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
-  margin-top:30px;
-  margin-bottom: 30px;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top:25px;
+  margin-bottom: 25px;
   border-width: 5px;
   border-color:#bcd4e7;
 }
