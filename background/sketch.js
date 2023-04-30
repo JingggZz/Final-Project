@@ -25,9 +25,9 @@ function setup() {
     particles[i] = new Particle();
   }
 
-  frameRate(1000);
+  frameRate(2000);
   
-  background(51);
+  background(186, 207, 225);
 }
 
 function draw() {
