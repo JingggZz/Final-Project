@@ -117,7 +117,11 @@
 
   .headerFQ,
   .question  {
-    width:100%
+    font-size: 180%;
+  }
+
+  .content {
+    font-size: 120%;
   }
 }
 
@@ -133,22 +137,10 @@
 
   .headerFQ,
   .question  {
-    width:100%
-  }
-}
-
-/* Phone */
-@media screen and (max-width: 340px) {
-  /* body {
-    background-color: blue;
-  } */
-
-  .body{
-    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+    font-size: 150%;
   }
 
-  .headerFQ,
-  .question  {
-    width:100%
+  .content {
+    font-size: 120%;
   }
 }
