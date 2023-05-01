@@ -88,7 +88,7 @@ function setup() {
     particles[i] = new Particle();
   }
 
-  frameRate(60);
+  frameRate(1000);
   
   background(186, 207, 225);
 }
