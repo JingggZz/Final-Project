@@ -262,8 +262,8 @@ main{
   .question-box .option-container .option {
     width: 80%;
     height: 50%;
-    font-size: 40px;
-    line-height: px;
+    font-size: 50px;
+    line-height: 20px;
     max-width: 350px;
     padding: 18px;
     margin-top: 10px;
@@ -277,7 +277,7 @@ main{
   }
 
   .btn {
-    font-size: 45px;
+    font-size: 60px;
     padding: 2vw 5vw;
   }
 }
@@ -328,7 +328,7 @@ main{
     width: 80%;
     height: 50%;
     font-size: 50px;
-    line-height: px;
+    line-height: 20px;
     max-width: 500px;
     padding: 18px;
     margin-top: 10px;
