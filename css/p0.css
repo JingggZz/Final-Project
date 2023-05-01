@@ -65,7 +65,7 @@ main{
 }
 .question-box .question-container,
 .question-box .question-text,
-.question-box .next-question-btn{
+.question-box {
   width:100%;
   float: left;
 
