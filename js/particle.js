@@ -6,6 +6,7 @@ class Particle {
     this.pos = createVector(random(width), random(height));
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
+    // Set a maximum speed for the particle
     this.maxspeed = 4;
     this.prevPos = this.pos.copy();
   }
@@ -17,6 +18,7 @@ class Particle {
     this.acc.mult(0);
   }
 
+  // Make the particle follow the direction of the flow field at its current position
   follow(vectors) {
     var x = floor(this.pos.x / scl);
     var y = floor(this.pos.y / scl);
@@ -40,7 +42,7 @@ class Particle {
     this.prevPos.x = this.pos.x;
     this.prevPos.y = this.pos.y;
   }
-
+  // Wrap the particle's position around the edges of the canvas
   edges() {
     if (this.pos.x > width) {
       this.pos.x = 0;
