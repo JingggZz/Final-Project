@@ -272,7 +272,7 @@ main{
 
   .answer-indicator {
     padding-top: 3%;
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 100px;
   }
 
@@ -298,8 +298,8 @@ main{
   }
 
   .question-box {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
     padding-left: 3%;
     padding-right: 3%;
     top: 0;
