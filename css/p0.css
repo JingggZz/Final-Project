@@ -59,7 +59,7 @@ main{
   font-size: 80%;
   border-radius: 50px;
   color:#003460;
-  Background-color:rgba(216, 230, 243, 0.3);
+  Background-color:rgba(216, 230, 243, 0.1);
 }
 .question-box .question-container,
 .question-box .question-text,
@@ -69,7 +69,7 @@ main{
 
 }
 .question-box .question-text{
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   justify-content: center;
   color:#003460;;
@@ -89,8 +89,8 @@ main{
 
 .question-box .option-container .option{
   width: 100%;
-  max-width: 500px;
-  background-color: rgba(90, 102, 113, 0.6);
+  max-width: 450px;
+  background-color: rgba(128, 145, 162, 0.2);
   padding: 15px;
   font-size: 40px;
   line-height: 30px;
@@ -99,6 +99,19 @@ main{
   margin-bottom: 10px;
   cursor: pointer;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+
 }
 
 .question-box .btn{
@@ -133,6 +146,43 @@ main{
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
+  .custom-box {
+    width: 60%;
+    margin: 10vh auto;
+  }
+
+  .question-box {
+    width: 70%;
+    height: 50%;
+    font-size: 4vw;
+    border-radius: 50px;
+  }
+
+  .question-box .question-text {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+
+  .question-box .option-container{
+    width: 100%;
+  }
+  .question-box .option-container .option {
+    width: 80%;
+    height:30%;
+    font-size: 3vw;
+    line-height: 20px;
+    max-width: 450px;
+    padding-top: 1%;
+    padding: 1.5vw;
+    margin-top: 2vw;
+    margin-bottom: 2px;
+  }
+
+  .btn {
+    font-size: 2vw;
+    padding: 1.5vw 4.5vw;
+  }
+
 }
 
 /* Medium */
@@ -143,6 +193,43 @@ main{
 
   .body{
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+
+  .custom-box {
+    width: 80%;
+    margin: 10vh auto;
+  }
+
+  .question-box {
+    width: 80%;
+    height: 50%;
+    font-size: 5vw;
+    border-radius: 50px;
+  }
+
+  .question-box .question-text {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+
+  .question-box .option-container{
+    width: 100%;
+  }
+
+  .question-box .option-container .option {
+    width: 80%;
+    height: 50%;
+    font-size: 5vw;
+    line-height: px;
+    max-width: 350px;
+    padding: 2vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .btn {
+    font-size: 3vw;
+    padding: 2vw 5vw;
   }
 }
 
@@ -156,4 +243,35 @@ main{
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
+  .custom-box {
+    width: 90%;
+    margin: 10vh auto;
+  }
+
+  .question-box {
+    width: 80%;
+    height: 60%;
+    font-size: 7vw;
+    border-radius: 50px;
+  }
+
+  .question-box .question-text {
+    font-size: 9vw;
+    line-height: 11vw;
+  }
+
+  .question-box .option-container{
+    width: 100%;
+  }
+
+  .question-box .option-container .option {
+    width: 80%;
+    height: 50%;
+    font-size: 5vw;
+    line-height: 10px;
+    max-width: 350px;
+    padding: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw
+  }
 }
