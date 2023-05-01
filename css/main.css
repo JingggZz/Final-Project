@@ -5,8 +5,7 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.headerFQ,
-.question  {
+.headerFQ {
   Background-color: #d8e6f3;
   font-size: 265%;
   font-weight:lighter;
@@ -43,29 +42,6 @@
   border-radius: 120px;
 }
 
-.startbutton,
-.tut1,
-.tut2,
-.tut3,
-.gr,
-.or,
-.rr {
-  color: rgb(218, 223, 227);
-  border-style: inset;
-  border-width: 8px;
-  margin: 3px;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 200px;
-  background-color: #d3d3d3;
-
-}
-
-.questionallign {
-  text-align: center;
-}
-
 .bold{
   font-size: 120%;
   font-weight:bold
@@ -81,6 +57,7 @@
   background-color: lightblue;
   text-align: center;
   font-size: 120%;
+  font-weight: bold;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: rgb(206, 225, 255);
   padding-top: 1%;
@@ -89,12 +66,10 @@
   padding-right: 4%;
   margin-top:25px;
   margin-bottom: 25px;
+  border-style: inset;
   border-width: 5px;
   border-color:#bcd4e7;
-}
-
-.question {
-  padding: 20px;
+  border-radius: 200px;
 }
 
 /* Media Queries for responsive design */
@@ -121,8 +96,7 @@
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
-  .headerFQ,
-  .question  {
+  .headerFQ {
     font-size: 200%;
   }
 
@@ -145,8 +119,7 @@
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
-  .headerFQ,
-  .question  {
+  .headerFQ {
     font-size: 180%;
   }
 
@@ -169,8 +142,7 @@
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
 
-  .headerFQ,
-  .question  {
+  .headerFQ {
     font-size: 200%;
     margin-top: 10%;
   }
