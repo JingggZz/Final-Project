@@ -209,8 +209,7 @@ main{
   }
 
   .answer-indicator {
-    padding-top: 3%;
-    margin-top: 3%;
+
     font-size: 110px;
   }
 
@@ -284,10 +283,6 @@ main{
 
 /* Small */
 @media screen and (max-width: 576px) {
-  /* body {
-    background-color: blue;
-  } */
-
   .body{
     flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
   }
