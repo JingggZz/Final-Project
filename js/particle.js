@@ -1,4 +1,4 @@
-// Main code from Daniel Shiffman
+// Reference: Daniel Shiffman
 // https://youtu.be/BjoM9oKOAKY
 
 class Particle {
