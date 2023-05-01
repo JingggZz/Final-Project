@@ -3,5 +3,115 @@ html, body {
   padding: 0;
 }
 canvas {
-  display: block;
+  display:flex;
+}
+
+.custom-box{
+  max-width: 700px;
+  background-color: #d8e6f3;
+  margin:40px auto;
+  padding:30px;
+  border-radius: 10px;
+}
+
+.custom-box::before,
+.custom-box::after{
+  content:'';
+  clear: both;
+  display: table;
+}
+
+.btn{
+  padding:15px 45px;
+  background-color:lightblue;
+  color:aliceblue;
+  border: none;
+  border-radius: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  cursor: pointer;
+  display:inline-block;
+}
+.question-box .question-container,
+.question-box .question-text,
+.question-box .next-question-btn{
+  width:100%;
+  float: left;
+
+}
+.question-box .question-text{
+  font-size: 22px;
+  color:#d8e6f3;
+  line-height: 28px;
+  font-weight: 400;
+  padding:10px 0;
+  margin:0;
+}
+
+.question-box .question-container.option{
+   background-color: #d8e6f3;
+   padding:15px;
+   font-size: 16px;
+   line-height: 22px;
+   color:aliceblue;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.question-box .btn{
+   margin:10px 0;
+
+}
+
+
+
+
+/* Media Queries for responsive design */
+
+/* Un-comment the body background-colors to see bold debug color change between screen sizes */
+/* Extra large */
+@media screen and (max-width: 1200px) {
+  /* body {
+    background-color: rgb(0, 255, 162);
+  } */
+
+  .body{
+      flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Large */
+@media screen and (max-width: 992px) {
+  /* body {
+    background-color: rgb(255, 81, 0);
+  } */
+
+  .body{
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+
+}
+
+/* Medium */
+@media screen and (max-width: 768px) {
+  /* body {
+    background-color: rgb(255, 0, 191);
+  } */
+
+  .body{
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Small */
+@media screen and (max-width: 576px) {
+  /* body {
+    background-color: blue;
+  } */
+
+  .body{
+    flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+
 }
