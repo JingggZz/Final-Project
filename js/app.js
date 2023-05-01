@@ -25,21 +25,25 @@ function getNewQuestion(){
     //remove the questionIndex from available questions in order to avoid repeat
     availableQuestions.splice(index1,1);
 
+    // Remove previously selected options from the DOM
+    optionContainer.innerHTML = "";
+
+    // Reset available options array
+    availableOptions = [];
     //set options
-    // const optionLength = currentQuestions.options.length;
     let result = getRandomOptions(currentQuestions.options, 5);
     
     // create options in
-    for(let i =0;i<5;i++){
+    for(let i =0;i<result.length;i++){
+        //random option
         const option = document.createElement("div");
         option.innerHTML = result[i];
         option.id=i;
         option.className = "option"
         optionContainer.appendChild(option);
-
-        clear();
+        // Add options to available options array
+        availableOptions.push(result[i]);
     }
-
     questionCounter++
 }
 
@@ -53,10 +57,13 @@ function next(){
 
 function getRandomOptions(sourceArray, neededElements) {
     var result = [];
+    // Make a copy of the sourceArray to avoid modifying the original one
+    var optionsCopy = sourceArray.slice();
     for (var i = 0; i < neededElements; i++) {
-        var index = Math.floor(Math.random() * sourceArray.length)
-        result.push(sourceArray[index]);
-        sourceArray.splice(index, 1);
+        var index = Math.floor(Math.random() * optionsCopy.length)
+        result.push(optionsCopy[index]);
+        // Remove selected option from the copied array
+        optionsCopy.splice(index, 1);
     }
     return result;
 }
@@ -68,6 +75,6 @@ function getNewOptions(){
 window.onload = function(){
     //set all questions in available question array
     setAvailableQueations();
-    //
-    getNewQueation();
+    
+    getNewQuestion();
 }
