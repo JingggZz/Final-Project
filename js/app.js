@@ -1,3 +1,6 @@
+//Reference: Random Quiz Application using by Html Css Javascript
+//https://www.youtube.com/watch?v=QU6z69P5BrU&t=152s
+
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
 const answerIndicatorContainer = document.querySelector(".answer-indicator");
