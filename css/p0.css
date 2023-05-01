@@ -1,3 +1,4 @@
+/* p0.css for p0.html */
 html,body {
   margin: 0;
   padding: 0;
@@ -209,7 +210,6 @@ main{
   }
 
   .answer-indicator {
-
     font-size: 110px;
   }
 
@@ -311,7 +311,7 @@ main{
   }
 
   .question-box .question-text {
-    font-size: 60px;
+    font-size: 120px;
     line-height: 11vw;
   }
 
@@ -322,7 +322,7 @@ main{
   .question-box .option-container .option {
     width: 80%;
     height: 50%;
-    font-size: 60px;
+    font-size: 100px;
     line-height: 20px;
     max-width: 500px;
     padding: 18px;
@@ -337,7 +337,7 @@ main{
   }
 
   .btn {
-    font-size: 80px;
+    font-size: 100px;
     padding: 2vw 5vw;
   }
 }
