@@ -114,6 +114,20 @@ main{
 
 }
 
+.answer-indicator {
+  display: flex;
+  font-size: 50px;;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.answer-indicator .btn{
+  display: flex;
+  justify-content: space-between;
+}
+
 .question-box .btn{
    margin:10px 0;
 
