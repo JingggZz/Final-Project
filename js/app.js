@@ -58,6 +58,7 @@ function answerIndicator(){
         const indicator = document.createElement("div");
         indicator.innerHTML = answers[i];
         answerIndicatorContainer.appendChild(indicator);
+        
     }
 
     // show the question text and option container
@@ -78,8 +79,6 @@ function next(){
         // hide question text and option container
         questionText.style.display = 'none';
         optionContainer.style.display = 'none';
-
-        finishedBox.style.display = 'block';
 
     }else{
         getNewQuestion();
