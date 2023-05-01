@@ -1,0 +1,28 @@
+.finished-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d8e6f3;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .finished-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .answer-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
