@@ -1,6 +1,5 @@
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
-const finishedBox = document.querySelector(".finished-box");
 const answerIndicatorContainer = document.querySelector(".answer-indicator");
 
 let questionCounter = 0;
