@@ -1,3 +1,4 @@
+//The arrays of questions
 const question = [
     {
         q:'Which heart do you like?',
