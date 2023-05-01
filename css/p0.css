@@ -46,8 +46,6 @@ main{
 .question-box{
   position:fixed;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
   top: 0;
   bottom: 0;
   left: 0;
