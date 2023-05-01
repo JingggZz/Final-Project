@@ -1,65 +1,47 @@
-// Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/024-perlinnoiseflowfield.html
+// Countdown also starts at 60 seconds (same at the limit of the page timer)
+var count = 60;
 
-var inc = 0.1;
-var scl = 10;
-var cols, rows;
+$(document).ready(function(){
+  // Show the Game Div
+  $("#game_container").show();
 
-var zoff = 0;
+  startCountdown();
+	return;
+})
 
-var fr;
+function countdown(){
+  // Decrement the counter, down from 60 seconds
+  count--;
 
-var particles = [];
+  $("#done_button").on("click", function(){
 
-var flowfield;
+    // Stop the countdown and run the timeUp function
+    //clearInterval(startCountdown);
+    count = 0; // <---- Needed a hack since I couldn't get the clearInterval function to work... It's been a long week :/
+    return;
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  cols = floor(width / scl);
-  rows = floor(height / scl);
-  fr = createP('');
+  });
 
-  flowfield = new Array(cols * rows);
+  if(count == -1){
 
-  for (var i = 0; i < 500; i++) {
-    particles[i] = new Particle();
+    // Collect the radio inputs
+    timeUp();
+
+    // Hide the game Div from the user
+    $("#game_container").hide();
+
   }
-
-  frameRate(60);
-  
-  background(186, 207, 225);
 }
 
-function draw() {
-  var yoff = 0;
-  for (var y = 0; y < rows; y++) {
-    var xoff = 0;
-    for (var x = 0; x < cols; x++) {
-      var index = x + y * cols;
-      var angle = noise(xoff, yoff, zoff) * TWO_PI * 4;
-      var v = p5.Vector.fromAngle(angle);
-      v.setMag(1);
-      flowfield[index] = v;
-      xoff += inc;
-      stroke(0, 50);
-      // push();
-      // translate(x * scl, y * scl);
-      // rotate(v.heading());
-      // strokeWeight(1);
-      // line(0, 0, scl, 0);
-      // pop();
-    }
-    yoff += inc;
+//the countdown, increment is 1 second
+function startCountdown(){
 
-    zoff += 0.0003;
-  }
+  setInterval(countdown, 1000);
 
-  for (var i = 0; i < particles.length; i++) {
-    particles[i].follow(flowfield);
-    particles[i].update();
-    particles[i].edges();
-    particles[i].show();
-  }
+}
 
-  // fr.html(floor(frameRate()));
+// Function to be run after the timer is up
+function timeUp(){
+  // Show the completed Score Div
+  $("#end_container").show();
 }
